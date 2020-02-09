@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1941349723F04404004C6DF1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1941349623F04404004C6DF1 /* NetworkManager.swift */; };
+		197FCD2923F042E30068606D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197FCD2823F042E30068606D /* ViewModel.swift */; };
 		19F98F5F23F040D9002B3C42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F98F5E23F040D9002B3C42 /* AppDelegate.swift */; };
 		19F98F6123F040D9002B3C42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F98F6023F040D9002B3C42 /* SceneDelegate.swift */; };
-		19F98F6323F040D9002B3C42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F98F6223F040D9002B3C42 /* ViewController.swift */; };
+		19F98F6323F040D9002B3C42 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F98F6223F040D9002B3C42 /* TableViewController.swift */; };
 		19F98F6623F040D9002B3C42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F98F6423F040D9002B3C42 /* Main.storyboard */; };
 		19F98F6823F040E0002B3C42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F98F6723F040E0002B3C42 /* Assets.xcassets */; };
 		19F98F6B23F040E0002B3C42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F98F6923F040E0002B3C42 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1941349623F04404004C6DF1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		197FCD2823F042E30068606D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		19F98F5B23F040D9002B3C42 /* MVVM-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F98F5E23F040D9002B3C42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19F98F6023F040D9002B3C42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		19F98F6223F040D9002B3C42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19F98F6223F040D9002B3C42 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		19F98F6523F040D9002B3C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19F98F6723F040E0002B3C42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19F98F6A23F040E0002B3C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19307D6D23F0412E00A9879D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19307D6E23F0413200A9879D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				197FCD2823F042E30068606D /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		19307D6F23F0413600A9879D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19F98F6423F040D9002B3C42 /* Main.storyboard */,
+				19F98F6923F040E0002B3C42 /* LaunchScreen.storyboard */,
+				19F98F6223F040D9002B3C42 /* TableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1941349523F043DF004C6DF1 /* SupportingServices */ = {
+			isa = PBXGroup;
+			children = (
+				1941349623F04404004C6DF1 /* NetworkManager.swift */,
+			);
+			path = SupportingServices;
+			sourceTree = "<group>";
+		};
 		19F98F5223F040D9002B3C42 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +93,24 @@
 		19F98F5D23F040D9002B3C42 /* MVVM-3 */ = {
 			isa = PBXGroup;
 			children = (
-				19F98F5E23F040D9002B3C42 /* AppDelegate.swift */,
-				19F98F6023F040D9002B3C42 /* SceneDelegate.swift */,
-				19F98F6223F040D9002B3C42 /* ViewController.swift */,
-				19F98F6423F040D9002B3C42 /* Main.storyboard */,
-				19F98F6723F040E0002B3C42 /* Assets.xcassets */,
-				19F98F6923F040E0002B3C42 /* LaunchScreen.storyboard */,
-				19F98F6C23F040E0002B3C42 /* Info.plist */,
+				1941349523F043DF004C6DF1 /* SupportingServices */,
+				19307D6F23F0413600A9879D /* View */,
+				19307D6E23F0413200A9879D /* ViewModel */,
+				19307D6D23F0412E00A9879D /* Model */,
+				19F98F7223F0411A002B3C42 /* SupportingFiles */,
 			);
 			path = "MVVM-3";
+			sourceTree = "<group>";
+		};
+		19F98F7223F0411A002B3C42 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				19F98F5E23F040D9002B3C42 /* AppDelegate.swift */,
+				19F98F6023F040D9002B3C42 /* SceneDelegate.swift */,
+				19F98F6723F040E0002B3C42 /* Assets.xcassets */,
+				19F98F6C23F040E0002B3C42 /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19F98F6323F040D9002B3C42 /* ViewController.swift in Sources */,
+				19F98F6323F040D9002B3C42 /* TableViewController.swift in Sources */,
 				19F98F5F23F040D9002B3C42 /* AppDelegate.swift in Sources */,
+				1941349723F04404004C6DF1 /* NetworkManager.swift in Sources */,
+				197FCD2923F042E30068606D /* ViewModel.swift in Sources */,
 				19F98F6123F040D9002B3C42 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TQU76263MV;
-				INFOPLIST_FILE = "MVVM-3/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MVVM-3/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TQU76263MV;
-				INFOPLIST_FILE = "MVVM-3/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MVVM-3/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
