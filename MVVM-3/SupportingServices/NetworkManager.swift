@@ -13,5 +13,4 @@ class NetworkManager: NSObject {
     func fetchMoovies(completion: ([String]) -> () ) {
         completion(["moovie 1", "moovie 2", "moovie 3"])
     }
-    
 }
